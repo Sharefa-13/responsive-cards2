@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: luxury;
+            src: url(Housttely\ Signature.ttf);
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .mainnav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ffffff;
+            height: 45px;
+            width: 100%;
+            margin: 0;
+        }
+
+        .mainnav h2 {
+            font-family: luxury;
+            font-size: 12px;
+            color: black;
+        }
+
+        .mainnav a {
+            text-decoration: none;
+            color: #9a6aff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            margin: 15px;
+        }
+
+        .mainnav a:hover {
+            color: black;
+        }
+
+        @media screen and (min-width:750px) {
+            .mainnav {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .after {
+                display: flex;
+                width: 500px;
+                justify-content: space-evenly;
+            }
+        }
+
+        .cardscontainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(to right, #d7a9e3, #c7aeea, #b8b2ed, #a8b6ee, #9abaed, #8dbfeb, #84c3e7, #7fc7e1, #80ccd8, #89d0ce, #97d3c3, #a8d5ba);        }
+
+        .firstcard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            background-color: #1e2029;
+            width: 350px;
+            position: relative;
+        }
+
+        .secondcard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1e2029;
+            margin-top: 50px;
+            width: 350px;
+            position: relative;
+        }
+
+        .thirdcard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1e2029;
+            margin-top: 50px;
+            width: 350px;
+            position: relative;
+        }
+
+        .fourthcard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1e2029;
+            margin-top: 50px;
+            width: 350px;
+            position: relative;
+        }
+
+        .mainPhoto {
+            width: 350px;
+            height: 225px;
+            ;
+        }
+
+        .profileimg {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 280px;
+            left: 20px;
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-top: 60px;
+
+        }
+
+        h5 {
+            margin: 0;
+            color: #9a6aff;
+        }
+
+        p {
+            color: #E3E3E3;
+            text-align: center;
+        }
+
+        .buttoms {
+            width: 200px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .buttoms button {
+            height: 40px;
+            width: 80px;
+            margin-top: 10px;
+            background-color: #9a6aff;
+            border: 2px solid #9a6aff;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .buttoms button:hover {
+            color: #A43AB2;
+            cursor: pointer;
+        }
+
+        .aftercontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media screen and (min-width:750px) {
+            body {
+                background-color: #e3e3e3;
+            }
+
+            .aftercontainerone {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 100vw;
+                margin-top: 80px;
+                min-width: 1120px;
+                
+              
+            }
+
+            .aftercontainertwo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 100vw;
+                margin-top: 80px;
+                min-width: 1120px;
+                margin-bottom: 50px;
+                
+            }
+            .firstcard {
+                display: flex;
+                flex-direction: row;
+                width: 550px;
+                height: 300px;
+                border-radius: 13px;
+                background-color: #1e2029;
+            }
+            .secondcard {
+                display: flex;
+                flex-direction: row;
+                width: 550px;
+                height: 300px;
+                border-radius: 13px;
+                background-color: #1e2029;
+                
+            }
+            .thirdcard {
+                display: flex;
+                flex-direction: row;
+                width: 550px;
+                height: 300px;
+                border-radius: 13px;
+                background-color: #1e2029;
+            }
+            .fourthcard {
+                display: flex;
+                flex-direction: row;
+                width: 550px;
+                height: 300px;
+                border-radius: 13px;
+                background-color: #1e2029;
+            }
+            
+            .mainPhoto {
+                height: 300px;
+                width: 300px;
+                border-top-left-radius: 13px;
+                border-bottom-left-radius: 13px;
+            }
+            .profileimg {
+                position: absolute;
+                left: 20px;
+                bottom: 250px;
+                box-shadow: 2px 2px 8px 0 #1e2029;
+
+            }
+            .aftercontent {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 50px;
+                
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main class="mainnav">
+        <h2>Mohamamd Sharefa</h2>
+        <div class="after">
+            <a href="#">clients</a>
+            <a href="#">Seactions</a>
+            <a href="#">About</a>
+        </div>
+    </main>
+    <main class="cardscontainer">
+        <div class="aftercontainerone">
+            <div class="firstcard">
+                <img class="mainPhoto" src="imgs/wp5736051-spring-europe-wallpapers.jpg" alt="">
+                <img class="profileimg" src="imgs/jason-shen-headshot.jpg" alt="max">
+                <span class="aftercontent">
+                    <h1>Max Jung</h1>
+                    <h5>Engineer</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae voluptate suscipit
+                        reprehenderit
+                        ad
+                        iusto eius culpa commodi labore, architecto deleniti repellat itaque. Laboriosam corporis
+                        tempora
+                        fugit
+                        magnam. Deserunt, sed.</p>
+                    <div class="buttoms">
+                        <button>Submit</button> <button>More</button>
+                    </div>
+                </span>
+            </div>
+
+            <div class="secondcard">
+                <img class="mainPhoto" src="imgs/wp4329537-arctic-wallpapers.jpg" alt="">
+                <img class="profileimg" src="imgs/c1_1937552_200619122619.jpg" alt="Sarah">
+                <span class="aftercontent">
+                    <h1>Sarah wiliam</h1>
+                    <h5>Photographer</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae voluptate suscipit
+                        reprehenderit
+                        ad
+                        iusto eius culpa commodi labore, architecto deleniti repellat itaque. Laboriosam corporis
+                        tempora
+                        fugit
+                        magnam. Deserunt, sed.</p>
+                    <div class="buttoms">
+                        <button>Submit</button> <button>More</button>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="aftercontainertwo">
+            <div class="thirdcard">
+                <img class="mainPhoto" src="imgs/wp9386974-palm-trees-4k-wallpapers.jpg" alt="">
+                <img class="profileimg" src="imgs/Africa-2.png" alt="maria">
+                <span class="aftercontent">
+                    <h1>Maria julie</h1>
+                    <h5>Accountant</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae voluptate suscipit
+                        reprehenderit
+                        ad
+                        iusto eius culpa commodi labore, architecto deleniti repellat itaque. Laboriosam corporis
+                        tempora
+                        fugit
+                        magnam. Deserunt, sed.</p>
+                    <div class="buttoms">
+                        <button>Submit</button> <button>More</button>
+                    </div>
+                </span>
+            </div>
+            <div class="fourthcard">
+                <img class="mainPhoto" src="imgs/wp2182940-saudi-arabia-wallpapers.jpg">
+                <img class="profileimg saudi" src="imgs/DSC_2040.jpg" alt="maria">
+                <span class="aftercontent">
+                    <h1>Ahmad Alshahen</h1>
+                    <h5>Real estate</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quae voluptate suscipit
+                        reprehenderit
+                        ad
+                        iusto eius culpa commodi labore, architecto deleniti repellat itaque. Laboriosam corporis
+                        tempora
+                        fugit
+                        magnam. Deserunt, sed.</p>
+                    <div class="buttoms">
+                        <button>Submit</button> <button>More</button>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
